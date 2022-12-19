@@ -2,7 +2,7 @@ require("dotenv").config();
 const { JSONResponse } = require('../helpers/jsonResponse');
 const User = require('../models/user.model');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 var salt = 10;
 
